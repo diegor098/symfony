@@ -1,0 +1,15 @@
+backend:
+    resource: "@BackendBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/DefaultController.php'
+    type: annotation
+    methods: POST
+
+app_user:
+    resource: '@AppBundle/Controller/UserController.php'
+    type: annotation
+    methods: POST
+    prefix: /user    
